@@ -1,3 +1,4 @@
 module.exports = {
-  LoginService: require('./login-handler')
+  LoginService: require('./login-handler'),
+  ChuckNorrisJokeService: require('./chuck-norris-handler')
 }
