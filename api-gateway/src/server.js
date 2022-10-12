@@ -8,4 +8,6 @@ const server = express()
 server.use(express.json())
 server.use(routes)
 
-server.listen(PORT, () => console.log(`API-Gateway server is listening on PORT:${PORT}`))
+server.listen(PORT, () =>
+  console.log(`API-Gateway server is listening on PORT:${PORT}`)
+)
