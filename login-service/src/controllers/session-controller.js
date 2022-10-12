@@ -28,7 +28,7 @@ class SessionController {
         }
       )
 
-      res.status(200).json({ token })
+      res.json({ token })
     } catch (error) {
       return res
         .status(error.status || 500)
