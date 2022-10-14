@@ -1,4 +1,4 @@
-const userDb = require('../mocks/user-db.json')
+const userDb = require('../../../db/user-db.json')
 
 class UserModel {
   static async getUserByEmail(email) {

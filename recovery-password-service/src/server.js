@@ -9,5 +9,5 @@ server.use(express.json())
 server.use(routes)
 
 server.listen(PORT, () =>
-  console.log(`API-Gateway server is listening on PORT:${PORT}`)
+  console.log(`Recovery-Password-Service server is listening on PORT:${PORT}`)
 )
