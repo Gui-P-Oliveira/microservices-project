@@ -16,11 +16,6 @@ Requisitos obrigatórios:
   - Utilize RabbitMQ
   - Nodemailer + Mailhog (ou similar)
 
-Nele aplicamos:
-  - Metodologia Ágil Kanban 
-  - Arquitura MVC
-  - Padrão do repositório baseado em Trunk based 
-
 Nesta API você terá acesso:
 - Serviço login.
 - Serviço recuperação de senha.
@@ -30,11 +25,10 @@ Nesta API você terá acesso:
   - Serviço ChuckNorrisJokeService integrado a uma API externa.
   
 
-A aplicação foi desenvolvida em **JavaScript** e utiliza **arquivo .json** como mockup do banco de dados, também utiliza as seguintes bibliotecas:
+A aplicação foi desenvolvida em **JavaScript** e utiliza as seguintes bibliotecas:
 
 - Express
 - Axios
-- Bcrypt
 - Jsonwebtoken
 - Dotenv
 - Nodemon
@@ -47,13 +41,17 @@ A aplicação foi desenvolvida em **JavaScript** e utiliza **arquivo .json** com
 
 ## Instalando as dependências
 
+Use o comando a baixo a partir de cada serviço:
+
 ```
 npm i
 ```
 
 ## Iniciando o Projeto
 
-Após instalar as dependências, configure as variáveis de ambiente e utilize o comando abaixo para iniciar a aplicação.
+Inicialize o RabbitMQ, Mailhog e Redis na sua máquina.
+
+Após instalar as dependências e inicializar as aplicações acima, configure as variáveis de ambiente e utilize o comando abaixo em cada serviço:
 
 ```
 npm run start
